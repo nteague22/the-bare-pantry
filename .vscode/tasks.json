@@ -1,0 +1,44 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/the-bare-pantry.csproj"
+            ],
+            "problemMatcher": "$tsc"
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/the-bare-pantry.csproj"
+            ],
+            "problemMatcher": "$tsc"
+        },
+        {
+            "label": "watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "${workspaceFolder}/the-bare-pantry.csproj"
+            ],
+            "problemMatcher": "$tsc"
+        },
+        {
+            "type": "typescript",
+            "tsconfig": "tsconfig.json",
+            "option": "watch",
+            "problemMatcher": [
+                "$tsc-watch"
+            ]
+        }
+    ]
+}

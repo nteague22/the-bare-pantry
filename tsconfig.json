@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "jsx": "react",
+        "target": "es5",
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "noEmitOnError": true,
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "listEmittedFiles": true,
+        "baseUrl": ".",
+        "paths": {
+            "modules/*": ["./modules/*"],
+            "components/*": ["./components/*"],
+            "*": ["node_modules/*"]
+        }        
+    },
+    "include": [
+        "./components/**/*.tsx",
+        "./modules/**/*.ts",
+        "./Views/**/*.tsx",
+        "webpack.config.ts"
+    ]
+}
